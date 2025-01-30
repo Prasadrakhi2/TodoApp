@@ -6,23 +6,12 @@ import ErrorMsg from './Component/ErrorMsg'
 import ItemList from './Component/ItemList'
 
 function App() {
-  let item =[
-    {
-        name:'Buy milk',
-        dueDate:'10/11/2004'
-    },
-    {
-        name:'Go to school',
-        dueDate:'10/11/2004'
-    }
-  ]
 
-  let [itemcomponebt, setitemcomponebt] = useState(item)
+  let [itemcomponebt, setitemcomponebt] = useState([])
 
   let handleOnClick = (itemName, itemDate)=>{
     let newItem = [...itemcomponebt,{name:itemName,dueDate:itemDate}]
     setitemcomponebt (newItem)
-    console.log(`name ${itemName} date ${itemDate}`)
   }
 
   let handleOnDelete = (deleteItem) =>{
