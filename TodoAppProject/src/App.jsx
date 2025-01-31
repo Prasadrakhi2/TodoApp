@@ -17,7 +17,7 @@ function App() {
   let handleOnDelete = (deleteItem) =>{
     let delItem = itemcomponebt.filter((item)=> item.name !== deleteItem)
     setitemcomponebt(delItem)
-    console.log(`deleted ${deleteItem}`)
+    
   }
 
 

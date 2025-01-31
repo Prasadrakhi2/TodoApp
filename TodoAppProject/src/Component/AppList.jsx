@@ -3,8 +3,8 @@ import styles from './AppList.module.css'
 
 const AppList = ({onClicked}) =>{
 
-    let [itemName, setItemName] = useState();
-    let [itemDate, setItemDate] = useState();
+    let [itemName, setItemName] = useState('');
+    let [itemDate, setItemDate] = useState('');
 
     let handleOnChangeItem = (event) => {
         setItemName(event.target.value)
