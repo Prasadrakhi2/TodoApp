@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from './AppList.module.css'
+import { MdAddBusiness } from "react-icons/md";
 
 const AppList = ({onClicked}) =>{
 
@@ -42,7 +43,7 @@ const AppList = ({onClicked}) =>{
                 <div className="col-2">
                     <button type="button" 
                     className="btn btn-success" 
-                    onClick={handleOnChange}>Add</button>
+                    onClick={handleOnChange}><MdAddBusiness /></button>
                     </div>
             </div>
         </div>
